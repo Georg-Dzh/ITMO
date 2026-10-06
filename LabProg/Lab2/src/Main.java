@@ -5,7 +5,7 @@ public class Main {
         Battle b = new Battle();
         Pokemon p1 = new Yveltal("Ивэльтал",70);
         Pokemon p2 = new Eevee("Иви",5);
-        Pokemon p3 =new Sylveon("Сильвеон",5);
+        Pokemon p3 =new Sylveon("Сильвеон",9);
         Pokemon p4 = new Budew("Бюдев",1);
         Pokemon p5 =new Roselia("Розелия",1);
         Pokemon p6 = new Roserade("Роузрейд",1);
