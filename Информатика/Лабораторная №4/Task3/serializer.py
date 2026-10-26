@@ -15,32 +15,29 @@ def setProps(obj):
         v = obj[k]                             
         if isinstance(v, list):
             s = listToStr(v)
-            lines.append(f"            <{k}>{s}</{k}>")
+            lines.append(f"        <{k}>{s}</{k}>")
         else:
-            lines.append(f"            <{k}>{v}</{k}>")          
+            lines.append(f"        <{k}>{v}</{k}>")          
 
 def setList(name, items):
-    lines.append(f"    <{name}>")
     for item in items:
-        lines.append("        <lesson>")          
-        setProps(item)                          
-        lines.append("        </lesson>")                        
-    lines.append(f"    </{name}>")
+        lines.append(f"    <{name}>")
+        setProps(item)
+        lines.append(f"    </{name}>")
 
 def convert(data):
     lines.append('<?xml version="1.0" encoding="utf-8"?>')
-    lines.append("<schedule>")
-    
+    lines.append("<root>")
     for k in data:
         v = data[k]                             
         if isinstance(v, list):
             setList(k, v)                       
         elif isinstance(v, dict):
-            lines.append(f"    <{k}>")              
+            lines.append(f"<{k}>")              
             setProps(v)                         
-            lines.append(f"    </{k}>")              
+            lines.append(f"</{k}>")              
             
-    lines.append("</schedule>")
+    lines.append("</root>")
 
 binary_content = open("intermediate", "rb").read()                                                               
 data = pickle.loads(binary_content)                                
@@ -51,7 +48,7 @@ out = ""
 for i in range(len(lines)):
     out += lines[i]                             
     if i < len(lines) - 1:
-        out += "\n"                            
+        out += "\n"                      
 
 # Записываем результат в файл schedule.xml
 fOut = open("schedule.xml", "w", encoding="utf-8").write(out)
