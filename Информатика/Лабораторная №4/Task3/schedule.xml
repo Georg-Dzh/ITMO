@@ -1,34 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<schedule>
+<root>
     <Суббота>
-        <lesson>
-            <time>8:10-9:40</time>
-            <weeks>7, 8, 9, 10, 11, 12, 13, 14</weeks>
-            <group>PRLCOMP 1</group>
-            <room>1338</room>
-            <building>Кронверкский пр., д.49, лит.А</building>
-            <subject>PARALLEL COMPUTING / ПАРАЛЛЕЛЬНЫЕ ВЫЧИСЛЕНИЯ (ЛЕК)</subject>
-            <format>Очно - дистанционный</format>
-        </lesson>
-        <lesson>
-            <time>11:30-13:00</time>
-            <weeks>7, 8, 9, 10, 11, 12, 13, 14</weeks>
-            <group>Информ (КСиТ) 2.6</group>
-            <room>1338</room>
-            <building>Кронверкский пр., д.49, лит.А</building>
-            <subject>ИНФОРМАТИКА (ЛАБ)</subject>
-            <format>Очно - дистанционный</format>
-        </lesson>
+        <time>8:10-9:40</time>
+        <weeks>7, 8, 9, 10, 11, 12, 13, 14</weeks>
+        <group>PRLCOMP 1</group>
+        <room>1338</room>
+        <building>Кронверкский пр., д.49, лит.А</building>
+        <subject>PARALLEL COMPUTING / ПАРАЛЛЕЛЬНЫЕ ВЫЧИСЛЕНИЯ (ЛЕК)</subject>
+        <format>Очно - дистанционный</format>
+    </Суббота>
+    <Суббота>
+        <time>11:30-13:00</time>
+        <weeks>7, 8, 9, 10, 11, 12, 13, 14</weeks>
+        <group>Информ (КСиТ) 2.6</group>
+        <room>1338</room>
+        <building>Кронверкский пр., д.49, лит.А</building>
+        <subject>ИНФОРМАТИКА (ЛАБ)</subject>
+        <format>Очно - дистанционный</format>
     </Суббота>
     <Среда>
-        <lesson>
-            <time>8:10-9:40</time>
-            <weeks>2, 4, 6, 8, 12, 14, 16</weeks>
-            <group>Информ СиППО 1</group>
-            <room>1405 АУД.</room>
-            <building>Кронверкский пр., д.49, лит.А</building>
-            <subject>ИНФОРМАТИКА (ЛЕК)</subject>
-            <format>Очно - дистанционный</format>
-        </lesson>
+        <time>8:10-9:40</time>
+        <weeks>2, 4, 6, 8, 12, 14, 16</weeks>
+        <group>Информ СиППО 1</group>
+        <room>1405 АУД.</room>
+        <building>Кронверкский пр., д.49, лит.А</building>
+        <subject>ИНФОРМАТИКА (ЛЕК)</subject>
+        <format>Очно - дистанционный</format>
     </Среда>
-</schedule>
+</root>
