@@ -18,7 +18,7 @@ def setProps(obj):
 def setList(name, items):
     num = 1                                    
     for item in items:
-        title = f"[{name} Lesson{num}]"          
+        title = f"[{name}_{num}]"          
         lines.append(title)                     
         setProps(item)                          
         lines.append("")                        
