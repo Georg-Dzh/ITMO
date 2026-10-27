@@ -11,7 +11,8 @@ def setProps(obj):
     for k in obj:
         v = obj[k]                             
         if isinstance(v, list):
-            s = listToStr(v)                    
+            s = listToStr(v)
+            lines.append(f"{k} = {s}") 
         else:
             lines.append(f"{k} = {v}")          
 
