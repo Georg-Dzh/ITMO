@@ -12,7 +12,7 @@ public class Vetrogon extends AbstractCharacter {
     public void useItem(AbstractItem item, Emotionable target) {
         try {
             super.useItem(item, target);
-            if (item instanceof Pourable pourableItem) {
+            if (item instanceof Pourable) {
                 String targetName = "персонажа";
                 if (target instanceof AbstractCharacter character) {
                     targetName = character.getName();
