@@ -13,12 +13,18 @@ public class Vetrogon extends AbstractCharacter {
         try {
             super.useItem(item, target);
             if (item instanceof WaterBucket) {
-                String targetName = (target instanceof AbstractCharacter character) ? character.getName() : "персонажа";
+                String targetName = "персонажа";
+                if (target instanceof AbstractCharacter character) {
+                    targetName = character.getName();
+                }
                 System.out.println("Ветрогон " + getName() + " обливает персонажа " + targetName + " из объекта: " + item.getTitle());
                 target.changeMood(Mood.ANGRY);
             }
         } catch (InvalidItemException e) {
-            String targetName = (target instanceof AbstractCharacter character) ? character.getName() : "персонажа";
+            String targetName = "персонажа";
+            if (target instanceof AbstractCharacter character) {
+                targetName = character.getName();
+            }
             System.out.println("У Ветрогона " + getName() + " НЕ получилось облить " + targetName + ", причина: " + e.getMessage());
         }
     }
