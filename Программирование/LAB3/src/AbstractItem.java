@@ -1,5 +1,5 @@
 public abstract class AbstractItem {
-    private final String title;
+    private String title;
 
     public AbstractItem(String title) {
         this.title = title;
