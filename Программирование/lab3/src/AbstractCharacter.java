@@ -58,7 +58,7 @@ public abstract class AbstractCharacter implements ItemInteractable, Emotionable
             printer.print(toString() + " использует " + item.getTitle());
             item.use(target);
 
-        } catch (InvalidItemException | IllegalArgumentException e) {
+        } catch (InvalidItemException e) {
             printer.print(e.getMessage());
         }
     }
